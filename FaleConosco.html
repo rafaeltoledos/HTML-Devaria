@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <header>
+        <h1>Fale Conosco</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="Professores.html">Professores</a> </li>
+                <li><a href="FaleConosco.html">Fale Conosco</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Para dúvidas e/ou sugestões, preencha o formulário abaixo.</h2>
+        <form action="index.html"> <!-- para direcionar para o index.html ao final do formulário-->
+            <p>
+                <label>Nome</label><input type="text" name="Nome" maxlength="30"/>
+            </p>
+            <p>
+                <label>E-mail</label><input type="text" name="Email" maxlength="150">
+            </p>
+            <p>
+                <label>Sexo:</label>
+                <input type="radio" name="Sexo"> Masculino <!--type=radio para selecionar apenas um opção, desabilitando a opção anterior.-->
+                <input type="radio" name="Sexo"> Feminino <!--ambos devem ter o mesmo NAME, senão não funciona-->
+            </p>
+            <p>
+                <label>Aonde você conheceu a Devaria</label>
+                <select name="Conheceu"> <!--janela de opções-->
+                    <option selected>Youtube</option> <!--SELECTED para manter este item como primeira opção oa aparecer-->
+                    <option>Amigos</option>
+                    <option>Instagram</option>
+                    <option>Google</option>
+                    <option>Outros</option>
+                </select>
+            </p>
+            <p>
+                <label>Mensagem</label>
+                <textarea name="Mensagem" cols="30" rows="10"></textarea> <!--espaço para a mensagem do usuário com linhas e colunas de tamanho.-->
+            </p>
+            <p>
+                <input type="checkbox" name="Aceite" value="Aceite">
+                <label>Aceito receber novidades por e-mail</label>
+            </p>
+            <p>
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="reset" name="Limpar" value="Limpar">
+            </p>
+        </form>
+
+    </main>
+    <footer>
+        <section>
+            <span>contato@devaria.com.br</span> <br>
+            <span>Conheça o canal do Youtube!</span>
+        </section>
+    </footer>
+</body>
+</html>
